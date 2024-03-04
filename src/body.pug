@@ -1,0 +1,14 @@
+mixin item(link)
+  li: a(href='#')= link
+
+nav.active#nav
+
+  ul
+    +item('Home')
+    +item('Works')
+    +item('About')
+    +item('Contact')
+
+  button.icon#toggle 
+    .line.line1
+    .line.line2  
